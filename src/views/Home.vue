@@ -1,6 +1,6 @@
 <template>
   <div class="is-max-w-lg mx-auto mb-5 has-text-centered">
-    <span class="tag is-info is-rounded">New project</span>
+    <span class="tag is-info is-rounded">New project {{ counter }}</span>
     <h2 class="mt-4 title is-spaced">
       <span>The quick</span>
       <span class="has-text-primary">brown fox</span>
@@ -98,7 +98,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    counter() {
+      return this.$store.state.counter;
+    },
+  },
+};
 </script>
 
 <style>
