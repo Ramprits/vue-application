@@ -62,7 +62,8 @@
           </div>
           <div class="navbar-menu">
             <div class="navbar-start is-centered-absolute">
-              <a class="navbar-item" href="#">Product</a
+              <router-link class="navbar-item" :to="{ name: 'Projects' }"
+                >Product</router-link
               ><a class="navbar-item" href="#">Company</a
               ><a class="navbar-item" href="#">About Us</a
               ><a class="navbar-item" href="#">Features</a>
